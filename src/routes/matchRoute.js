@@ -43,6 +43,7 @@ router.delete('/', (req, res, next) => {
 // handling PATCH request
 router.patch('/', (req, res, next) => {
     const request = 'event = "' + req.body.event  + '", '
+    + 'type = "' + req.body.type + '", '
     + 'team1_name = "' + req.body.team1_name + '", '
     + 'team1_score = "' + req.body.team1_score + '", '
     + 'team2_name = "' + req.body.team2_name + '", '
